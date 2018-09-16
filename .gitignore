@@ -1,0 +1,9 @@
+node_modules
+envvars
+_out
+*.mp4
+npm-debug.log
+*.m4a
+envvars
+config/sslcerts
+yarn-error.log

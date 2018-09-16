@@ -1,0 +1,22 @@
+{
+  "name": "canvas-fullscreen",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "browserify index.js  -t [ babelify --presets [ @babel/preset-env ] | uglifyjs > bundle.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.2",
+    "uglifyjs": "^2.4.11"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["@babel/preset-env"] }]]
+  }
+}
